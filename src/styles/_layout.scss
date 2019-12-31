@@ -1,5 +1,6 @@
 @import 'reset-css';
 @import './variables';
+@import './typography';
 
 body {
   background: $light_blue;
@@ -26,4 +27,14 @@ a {
     margin: 0 auto;
     max-width: 1060px;
   }
+}
+
+.button {
+  background: $blue;
+  color: white;
+  width: 117px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  font-weight: 600;
 }

@@ -1,9 +1,18 @@
+@import '../../../../../styles/variables';
+
 .home-search-result {
   &-item {
     background: white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px $grey_blue solid;
   }
   &-children {
-    padding-left: 10px;
+    padding-left: 20px;
   }
 }
