@@ -9,7 +9,7 @@ import { Item } from './interfaces/item.interface';
 })
 export class HomeComponent implements OnInit {
 
-  items: Item[] = [{title:'',id:0,parent_id:0}];
+  items: Item[] = [];
 
   constructor(private itemsService: ItemsService) { }
 
@@ -19,8 +19,7 @@ export class HomeComponent implements OnInit {
   }
 
   get topLevelItems(): Item[] {
-    console.log(this.items.length);
-    return this.items.filter((item) => item.id === item.parent_id);
+    return this.items.filter((item) => item.parent_id === null);
   }
 
   trackItems(index: number, item: Item): string {

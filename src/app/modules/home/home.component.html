@@ -3,7 +3,7 @@
     <app-home-search-box></app-home-search-box>
     <div class="home-search-results">
       <app-home-search-result
-        *ngFor="let item in items; trackBy: trackItems"
+        *ngFor="let item of topLevelItems; trackBy: trackItems"
         [item]="item"
       >
       </app-home-search-result>
