@@ -1,8 +1,12 @@
-<section class="home">
-  <div class="home-container">
+<section class="page">
+  <div class="page-container">
     <app-home-search-box></app-home-search-box>
     <div class="home-search-results">
-      <app-home-search-result></app-home-search-result>
+      <app-home-search-result
+        *ngFor="let item in items; trackBy: trackItems"
+        [item]="item"
+      >
+      </app-home-search-result>
     </div>
   </div>
 </section>

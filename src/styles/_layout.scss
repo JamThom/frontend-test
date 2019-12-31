@@ -19,3 +19,11 @@ html, body {
 a {
   text-decoration: none;
 }
+
+.page {
+  padding: 40px 70px;
+  &-container {
+    margin: 0 auto;
+    max-width: 1060px;
+  }
+}
