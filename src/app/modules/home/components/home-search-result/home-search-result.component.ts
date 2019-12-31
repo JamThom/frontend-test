@@ -8,6 +8,19 @@ import { Item } from '@modules/home/interfaces/item.interface';
 })
 export class HomeSearchResultComponent {
 
-  @Input() item: Item;
+  @Input() itemId: number;
+  @Input() items: Item[];
+
+  get currentItem(): Item {
+    return this.items.filter((item) => item.id === this.itemId)[0];
+  }
+
+  get childItems(): Item[] {
+    return this.items.filter((item) => item.parent_id === this.itemId);
+  }
+
+  trackItems(index: number, item: Item): number {
+    return item.id;
+  }
 
 }

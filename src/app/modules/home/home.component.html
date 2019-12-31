@@ -4,7 +4,8 @@
     <div class="home-search-results">
       <app-home-search-result
         *ngFor="let item of topLevelItems; trackBy: trackItems"
-        [item]="item"
+        [itemId]="item.id"
+        [items]="items"
       >
       </app-home-search-result>
     </div>

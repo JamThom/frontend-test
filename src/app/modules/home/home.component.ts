@@ -22,8 +22,8 @@ export class HomeComponent implements OnInit {
     return this.items.filter((item) => item.parent_id === null);
   }
 
-  trackItems(index: number, item: Item): string {
-    return item.title;
+  trackItems(index: number, item: Item): number {
+    return item.id;
   }
 
 }
