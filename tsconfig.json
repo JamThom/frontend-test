@@ -13,10 +13,6 @@
     "importHelpers": true,
     "target": "es2015",
     "typeRoots": ["node_modules/@types"],
-    "paths": {
-      "@modules/*": ["src/app/modules/*"],
-      "@shared/*": ["src/app/shared/*"]
-    },
     "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {
