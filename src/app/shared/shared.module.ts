@@ -9,6 +9,7 @@ import { SidebarNavigationComponent } from './components/sidebar-navigation/side
   declarations: [TitleBarComponent, SidebarNavigationComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [TitleBarComponent, SidebarNavigationComponent]
 })
 export class SharedModule { }
