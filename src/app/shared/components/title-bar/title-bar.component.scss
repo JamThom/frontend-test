@@ -1,8 +1,11 @@
+@import '../../../../styles/variables';
+
 .title-bar {
   top: 0px;
   left: 0px;
   height: 64px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-bottom: 1px $light_grey solid;
   display: flex;
   justify-content: space-between;
   padding: 0 40px;

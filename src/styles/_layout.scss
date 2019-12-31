@@ -5,8 +5,17 @@ body {
   background: $light_blue;
   font-family: 'Soleil', sans-serif;
   color: $navy;
+  font-size: 14px;
 }
 
 html, body {
   height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }

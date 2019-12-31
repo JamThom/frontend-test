@@ -1,1 +1,9 @@
-<p>sidebar-navigation works!</p>
+<aside class="sidebar-navigation">
+  <div class="sidebar-navigation-preview">
+    <div class="sidebar-navigation-tumbnail" [style.backgroundImage]="thumbnailBG"></div>
+    <div class="sidebar-navigation-caption">{{ siteName }}</div>
+  </div>
+  <nav class="sidebar-navigation-links">
+    <a *ngFor="let link of links" href="#" class="sidebar-navigation-links">{{ link }}</a>
+  </nav>
+</aside>
