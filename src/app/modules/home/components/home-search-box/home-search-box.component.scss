@@ -1,0 +1,20 @@
+@import '../../../../../styles/variables';
+
+.home-search-box {
+  position: relative;
+  &-input {
+    height: 40px;
+    background: white;
+    padding: 0 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px $light_grey_blue solid;
+    margin-bottom: 20px;
+    line-height: 5;
+  }
+  &-icon {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+  }
+}
