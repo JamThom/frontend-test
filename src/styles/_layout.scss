@@ -15,6 +15,9 @@ html, body {
 
 * {
   box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
 }
 
 a {
@@ -23,6 +26,9 @@ a {
 
 .page {
   padding: 40px 70px;
+  @media (max-width: $breakpoint-m) {
+    padding: 20px;
+  }
   &-container {
     margin: 0 auto;
     max-width: 1060px;

@@ -11,5 +11,8 @@
     padding: 0 20px;
     border-radius: 5px;
     border: 1px $grey_blue solid;
+    .button {
+      cursor: pointer;
+    }
   }
 }

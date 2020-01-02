@@ -11,6 +11,9 @@
     border: 1px $light_grey_blue solid;
     margin-bottom: 20px;
     line-height: 5;
+    &:focus {
+      border-color: $blue;
+    }
   }
   &-icon {
     position: absolute;
