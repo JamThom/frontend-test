@@ -1,13 +1,16 @@
 <div class="home-search-result">
-  <div class="home-search-result-item">
+  <div
+    class="home-search-result-item"
+    *ngIf="searchTermMatches">
     <h4>{{ currentItem.title }}</h4>
     <button class="button">Button</button>
   </div>
-  <div class="home-search-result-children">
+  <div [style.marginLeft]="childrenPadding">
     <app-home-search-result
       *ngFor="let item of childItems; trackBy: trackItems"
       [itemId]="item.id"
       [items]="items"
+      [searchTerm]="searchTerm"
     >
     </app-home-search-result>
   </div>

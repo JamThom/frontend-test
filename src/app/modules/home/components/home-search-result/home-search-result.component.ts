@@ -10,6 +10,7 @@ export class HomeSearchResultComponent {
 
   @Input() itemId: number;
   @Input() items: Item[];
+  @Input() searchTerm: string;
 
   get currentItem(): Item {
     return this.items.filter((item) => item.id === this.itemId)[0];
@@ -21,6 +22,13 @@ export class HomeSearchResultComponent {
 
   trackItems(index: number, item: Item): number {
     return item.id;
+  }
+
+  get searchTermMatches() {
+    const title = this.currentItem.title.toLowerCase();
+    const searchTerm = this.searchTerm === undefined ? '' : this.searchTerm.toLowerCase();
+    console.log(searchTerm);
+    return searchTerm === '' || title.indexOf(searchTerm) === 0;
   }
 
 }
