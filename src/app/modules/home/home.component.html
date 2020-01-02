@@ -1,11 +1,12 @@
 <section class="page">
   <div class="page-container">
-    <app-home-search-box></app-home-search-box>
+    <app-home-search-box (search)="handleSearch($event)"></app-home-search-box>
     <div class="home-search-results">
       <app-home-search-result
         *ngFor="let item of topLevelItems; trackBy: trackItems"
         [itemId]="item.id"
         [items]="items"
+        [searchTerm]="searchTerm"
       >
       </app-home-search-result>
     </div>

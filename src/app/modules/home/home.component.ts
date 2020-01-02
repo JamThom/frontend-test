@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
 
   items: Item[] = [];
 
+  searchTerm: string;
+
   constructor(private itemsService: ItemsService) { }
 
   ngOnInit() {
@@ -24,6 +26,10 @@ export class HomeComponent implements OnInit {
 
   trackItems(index: number, item: Item): number {
     return item.id;
+  }
+
+  handleSearch(searchTerm: string) {
+    this.searchTerm = searchTerm;
   }
 
 }

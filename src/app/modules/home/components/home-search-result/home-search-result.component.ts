@@ -20,6 +20,10 @@ export class HomeSearchResultComponent {
     return this.items.filter((item) => item.parent_id === this.itemId);
   }
 
+  get childrenPadding(): string {
+    return this.se
+  }
+
   trackItems(index: number, item: Item): number {
     return item.id;
   }
@@ -27,7 +31,6 @@ export class HomeSearchResultComponent {
   get searchTermMatches() {
     const title = this.currentItem.title.toLowerCase();
     const searchTerm = this.searchTerm === undefined ? '' : this.searchTerm.toLowerCase();
-    console.log(searchTerm);
     return searchTerm === '' || title.indexOf(searchTerm) === 0;
   }
 
