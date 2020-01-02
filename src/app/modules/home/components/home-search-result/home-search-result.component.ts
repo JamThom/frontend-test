@@ -21,7 +21,7 @@ export class HomeSearchResultComponent {
   }
 
   get childrenPadding(): string {
-    return this.se
+    return this.searchTermMatches ? '20px' : '0';
   }
 
   trackItems(index: number, item: Item): number {
